@@ -19,7 +19,7 @@ for i in xrange(101, 1000):
 	    if max_pal < num:
 	        num1, num2, max_pal = i, j, num
 print num1, num2, max_pal
-
+ #project euler
 
 
 
