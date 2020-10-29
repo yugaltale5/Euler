@@ -4,3 +4,4 @@ for num in range (0,1000):
         sum=sum+num
 print(sum)
 #soln 1
+#project Euler
