@@ -1,21 +1,13 @@
-def evenFibSum(limit) : 
-    if (limit < 2) : 
-        return 0
-    ef1 = 0
-    ef2 = 2
-    sm= ef1 + ef2  
-    while (ef2 <= limit) :  
-        ef3 = 4 * ef2 + ef1 
-  
-        # If we go beyond limit, we break loop 
-        if (ef3 > limit) : 
-            break
-        ef1 = ef2 
-        ef2 = ef3 
-        sm = sm + ef2 
-      
-    return sm 
-  
-limit = 4000000
+def compute():
+	ans = 0
+	x = 1  # Represents the current Fibonacci number being processed
+	y = 2  # Represents the next Fibonacci number in the sequence
+	while x <= 4000000:
+		if x % 2 == 0:
+			ans += x
+		x, y = y, x + y
+	return str(ans)
 
-print(evenFibSum(limit))
+
+if __name__ == "__main__":
+	print(compute())
