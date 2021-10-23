@@ -20,7 +20,7 @@ for i in xrange(101, 1000):
 	        num1, num2, max_pal = i, j, num
 #print num1, num2, max_pal
 print num1, num2, max_pal
-
+ #project euler
 
 
  #problem33
